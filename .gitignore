@@ -1,0 +1,59 @@
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+health-check-system
+main
+
+# Test files
+*.test
+*.out
+
+# Dependencies
+vendor/
+
+# Go workspace
+go.work
+
+# Environment files - CRITICAL: Contains passwords!
+.env
+.env.*
+*.env
+!.env.example
+
+# Config files with secrets
+config/secrets.yaml
+config/*.secret.yaml
+
+# Database files
+*.sql.backup
+*.dump
+backup_*.sql
+
+# Logs
+logs/
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output
+bin/
+build/
+dist/
+tmp/
+temp/
+
+# SSH keys
+*.pem
+*.key
+id_rsa*
