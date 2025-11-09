@@ -1,0 +1,21 @@
+# Infrastructure Configuration
+infrastructure:
+  mito_proxies:
+    strategy: "failover"
+    connection_timeout: 30s
+    retry_attempts: 3
+    retry_delay: 5s
+  
+  app_servers:
+    strategy: "failover"
+    connection_timeout: 30s
+    retry_attempts: 2
+
+niam:
+  intermediate_ip: "10.55.170.31"
+  connection_timeout: 30s
+
+ssh:
+  timeout: 30s
+  keepalive_interval: 10s
+  max_retries: 3

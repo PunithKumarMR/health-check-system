@@ -1,0 +1,18 @@
+health_check:
+  max_concurrent_checks: 50
+  poll_interval: 30s
+  max_wait_time: 80m
+  command_timeout: 60s
+  max_retries: 3
+  retry_delay: 10s
+
+user_pool:
+  max_sessions_per_user: 5
+  max_wait_for_user: 300s
+  check_interval: 2s
+
+logging:
+  level: "DEBUG"
+  file: "logs/health-check.log"
+  max_size_mb: 100
+  max_backups: 5
