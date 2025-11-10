@@ -1,3 +1,8 @@
+
+## 🩺 About
+
+The **Health Check System** is an automated, parallel health-check platform built in **Go** for large-scale network environments.  
+It performs concurrent health checks across routers, switches, and servers with intelligent session management, real-time tracking, and built-in failover handling — designed for internal use at **Airtel**.
 # Health Check System
 
 Automated parallel health check system for network nodes using Go.
